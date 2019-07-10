@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Responsable Técnico</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -18,15 +18,17 @@
 
       <!-- Name Title -->
 
-      <h1>(unnamed)</h1>
+      <h1>Responsable Técnico</h1>
 
       <!-- Type and Stereotype -->
 
       <section style="margin-top: .5em;">
         <span class="alert alert-info">
-          <span class="node-icon staruml-icon icon-UMLGeneralization"></span>
-          UMLGeneralization
+          <span class="node-icon staruml-icon icon-UMLAssociationEnd"></span>
+          UMLAssociationEnd
         </span>
+        
+          <span style="margin-left: 10px" class="alert alert-info">«»</span>
         
       </section>
 
@@ -46,10 +48,13 @@
           <span class="label label-info"><a href='c99882d8a7eb633e1289e7958126366e.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>Proyecto</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='a326c3f1871a6e39d31f610056826a7c.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Proyecto</a></span>
+          <span class="label label-info"><a href='1fdbf6d75a63079204c177936ef1b8a0.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Proyecto</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='2800e7fa4ee3d54857b9b09b66453d2a.html'><span class='node-icon staruml-icon icon-UMLGeneralization'></span>(Proyecto→Proyecto)</a></span>
+          <span class="label label-info"><a href='45003b4eccac3784d91976ee9cae2df6.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Proyecto—Investigador)</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='ec4c06670cab4e25004c4f1fa2e0bd00.html'><span class='node-icon staruml-icon icon-UMLAssociationEnd'></span>Responsable Técnico</a></span>
         
       </section>
 
@@ -76,25 +81,6 @@
 
       <!-- Directed Relationship -->
 
-      
-      <section class="element-list">
-        <table width="100%">
-          <tr>
-            <td width="50%">
-              <h3>Source</h3>
-              <ul class="nav nav-list">
-                <li><a href='a326c3f1871a6e39d31f610056826a7c.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Proyecto</a></a></li>
-              </ul>
-            </td>
-            <td width="50%">
-              <h3>Target</h3>
-              <ul class="nav nav-list">
-                <li><a href='1fdbf6d75a63079204c177936ef1b8a0.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Proyecto</a></a></li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-      </section>
       
 
       <!-- Undirected Relationship -->
@@ -237,7 +223,7 @@
     
     <tr>
         <td>name</td>
-        <td></td>
+        <td>Responsable Técnico</td>
     </tr>
     
     
@@ -251,17 +237,8 @@
     
     
     <tr>
-        <td>source</td>
-        <td><a href='a326c3f1871a6e39d31f610056826a7c.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Proyecto</a></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>target</td>
-        <td><a href='1fdbf6d75a63079204c177936ef1b8a0.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Proyecto</a></td>
+        <td>reference</td>
+        <td><a href='098c96bd8ac2b4da21b28a880e83de73.html'><span class='node-icon staruml-icon icon-UMLClass'></span>«Rol»Investigador</a></td>
     </tr>
     
     
@@ -270,7 +247,7 @@
     
     <tr>
         <td>stereotype</td>
-        <td><span class='label label-info'>null</span></td>
+        <td></td>
     </tr>
     
     
@@ -287,8 +264,91 @@
     
     
     <tr>
-        <td>discriminator</td>
+        <td>navigable</td>
+        <td><span class='label label-info'>true</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>aggregation</td>
+        <td>none</td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>multiplicity</td>
+        <td>1</td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>defaultValue</td>
         <td></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isReadOnly</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isOrdered</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isUnique</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isDerived</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isID</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>qualifiers</td>
+        <td>
+            
+        </td>
     </tr>
     
     
