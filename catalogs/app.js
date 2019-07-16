@@ -32,7 +32,7 @@ app.get('/service/public', function (req, res) {
 });
 
 app.get('/service/secured', keycloak.protect('realm:user'), function (req, res) {
-  res.json({message: 'secured'});
+  res.json({message: 'secured access'});
 });
 
 app.use('*', function (req, res) {

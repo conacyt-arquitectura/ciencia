@@ -1,0 +1,241 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2019-07-16T06:06:50.415Z",
+	"__export_source": "insomnia.desktop.app:v6.2.0",
+	"resources": [
+		{
+			"_id": "wrk_38dfee3602d14dada54340476eea6ab2",
+			"created": 1563248483970,
+			"description": "",
+			"modified": 1563248483970,
+			"name": "conacyt",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_3c47a1b01ed54f5fbee7725725ea60c0",
+			"color": null,
+			"created": 1563248484463,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 1563248484463,
+			"modified": 1563248584827,
+			"name": "New Environment",
+			"parentId": "wrk_38dfee3602d14dada54340476eea6ab2",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_acb6fd1c09024285badecdc1fb9a5ec7",
+			"cookies": [
+				{
+					"creation": "2019-07-16T03:55:01.757Z",
+					"domain": "localhost",
+					"expires": "1970-01-01T00:00:10.000Z",
+					"extensions": [
+						"Version=1"
+					],
+					"hostOnly": true,
+					"httpOnly": true,
+					"id": "7022386590780887",
+					"key": "KC_RESTART",
+					"lastAccessed": "2019-07-16T06:06:13.686Z",
+					"maxAge": 0,
+					"path": "/auth/realms/conacyt/"
+				},
+				{
+					"creation": "2019-07-16T03:57:30.462Z",
+					"domain": "localhost",
+					"hostOnly": true,
+					"httpOnly": true,
+					"id": "7903181732126234",
+					"key": "connect.sid",
+					"lastAccessed": "2019-07-16T05:56:06.248Z",
+					"path": "/",
+					"value": "s%3AXii7RBfUQ5NRvX4_NmWi8TF1w0V7TFDH.MLYJusPxdP5SW1YesNxlm82FnGY6%2F0GgsaZpsEI0qCk"
+				},
+				{
+					"creation": "2019-07-16T04:17:26.886Z",
+					"domain": "2886795279-8443-cykoria02.environments.katacoda.com",
+					"expires": "1970-01-01T00:00:10.000Z",
+					"extensions": [
+						"Version=1"
+					],
+					"hostOnly": true,
+					"httpOnly": true,
+					"id": "19248093433578695",
+					"key": "KC_RESTART",
+					"lastAccessed": "2019-07-16T04:45:45.829Z",
+					"maxAge": 0,
+					"path": "/auth/realms/katacoda/"
+				},
+				{
+					"creation": "2019-07-16T04:17:30.083Z",
+					"domain": "2886795279-3000-cykoria02.environments.katacoda.com",
+					"hostOnly": true,
+					"httpOnly": true,
+					"id": "140536998029408",
+					"key": "connect.sid",
+					"lastAccessed": "2019-07-16T04:17:30.083Z",
+					"path": "/",
+					"value": "s%3AvRcgXOUx9qZb86eqT5L1iGH8xtmvulZl.PoK3gCpJww1dtTe4zkX1yR1Z13d6rJrqDyuKBEjILsw"
+				},
+				{
+					"creation": "2019-07-16T04:45:19.965Z",
+					"domain": "localhost",
+					"expires": "1970-01-01T00:00:10.000Z",
+					"extensions": [
+						"Version=1"
+					],
+					"hostOnly": true,
+					"httpOnly": true,
+					"id": "748106232170501",
+					"key": "KC_RESTART",
+					"lastAccessed": "2019-07-16T05:52:11.847Z",
+					"maxAge": 0,
+					"path": "/auth/realms/katacoda/"
+				}
+			],
+			"created": 1563248484486,
+			"modified": 1563257173687,
+			"name": "Default Jar",
+			"parentId": "wrk_38dfee3602d14dada54340476eea6ab2",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_b338a89dad0546f0ad6fa6a5ed74d494",
+			"authentication": {
+				"disabled": false,
+				"prefix": "",
+				"token": "{% response 'body', 'req_60532bbf6fec44d9be79b97d213a38d6', '$.access_token' %}",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1563248510564,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_5c08d2ef4e834494a7236f15806fb8ef",
+					"name": "",
+					"value": ""
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1563248510564,
+			"method": "GET",
+			"modified": 1563257175094,
+			"name": "/service/secured",
+			"parameters": [],
+			"parentId": "wrk_38dfee3602d14dada54340476eea6ab2",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ service_url  }}/service/secured",
+			"_type": "request"
+		},
+		{
+			"_id": "req_60532bbf6fec44d9be79b97d213a38d6",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/x-www-form-urlencoded",
+				"params": [
+					{
+						"id": "pair_3e52fca6e1c84414a97274ad04c79bae",
+						"name": "username",
+						"value": "test"
+					},
+					{
+						"id": "pair_752c875997984a7e8d18a8ab43d4e2f1",
+						"name": "password",
+						"value": "test"
+					},
+					{
+						"id": "pair_e4f3f1426ae943d29927190688d5fa59",
+						"name": "grant_type",
+						"value": "password"
+					},
+					{
+						"id": "pair_1bacec2b0a7c460a97026b3e096df97e",
+						"name": "client_id",
+						"value": "admin-cli"
+					}
+				]
+			},
+			"created": 1563248579500,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_aa97c30f80444f0a9b7c32539aa064df",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1563248579500,
+			"method": "POST",
+			"modified": 1563257172670,
+			"name": "/idm/token",
+			"parameters": [],
+			"parentId": "wrk_38dfee3602d14dada54340476eea6ab2",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ idm_url  }}/auth/realms/{{ realm  }}/protocol/openid-connect/token",
+			"_type": "request"
+		},
+		{
+			"_id": "env_93bddb7b53494aa79b8f1e133441138f",
+			"color": null,
+			"created": 1563248587190,
+			"data": {
+				"idm_url": "http://localhost:9080",
+				"realm": "conacyt",
+				"service_url": "http://localhost:3000"
+			},
+			"isPrivate": false,
+			"metaSortKey": 1563248587190,
+			"modified": 1563252947111,
+			"name": "development",
+			"parentId": "env_3c47a1b01ed54f5fbee7725725ea60c0",
+			"_type": "environment"
+		},
+		{
+			"_id": "env_c19adb11085b426a974a84c1326d5859",
+			"color": null,
+			"created": 1563250529001,
+			"data": {
+				"idm_url": "https://2886795279-8443-cykoria02.environments.katacoda.com",
+				"realm": "katacoda",
+				"service_url": "http://2886795279-3000-cykoria02.environments.katacoda.com"
+			},
+			"isPrivate": false,
+			"metaSortKey": 1563250529001,
+			"modified": 1563252953025,
+			"name": "katacoda",
+			"parentId": "env_3c47a1b01ed54f5fbee7725725ea60c0",
+			"_type": "environment"
+		},
+		{
+			"_id": "env_9a659d034b784978b6f8979dd00a3860",
+			"color": null,
+			"created": 1563252936397,
+			"data": {
+				"idm_url": "http://localhost:9080",
+				"realm": "katacoda",
+				"service_url": "http://localhost:3000"
+			},
+			"isPrivate": false,
+			"metaSortKey": 1563252936398,
+			"modified": 1563253212275,
+			"name": "katacota-local",
+			"parentId": "env_3c47a1b01ed54f5fbee7725725ea60c0",
+			"_type": "environment"
+		}
+	]
+}
