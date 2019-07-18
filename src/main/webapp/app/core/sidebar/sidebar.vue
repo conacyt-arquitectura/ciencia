@@ -1,28 +1,52 @@
 <template>
-  <nav id="sidebar" v-bind:class="{'active': active}">
-    <div class="sidebar-header">
-      <h3>Bootstrap Sidebar</h3>
-      <a @click="toggle()">
-        <font-awesome-icon icon="bars" />
-      </a>
+  <div id="slideout">
+    <div id="tab" @click="toggle()" v-bind:class="{'hidden': active}">
+      <font-awesome-icon icon="bars" />
     </div>
+    <nav id="sidebar" v-bind:class="{'active': active}">
+      <div class="sidebar-header">
+        <h3>Bootstrap Sidebar</h3>
+      </div>
 
-    <ul class="list-unstyled components">
-      <p>Dummy Heading</p>
-      <li>
-        <b-nav-item to="/" exact>
-          <span>
-            <font-awesome-icon icon="home" />
-            <span v-text="$t('global.menu.home')">Home</span>
-          </span>
-        </b-nav-item>
-      </li>
-    </ul>
-  </nav>
+      <ul class="list-unstyled components">
+        <p>Dummy Heading</p>
+        <li>
+          <b-nav-item to="/" exact>
+            <span>
+              <font-awesome-icon icon="home" />
+              <span v-text="$t('global.menu.home')">Home</span>
+            </span>
+          </b-nav-item>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </template>
 <script lang="ts" src="./sidebar.component.ts">
 </script>
 <style scoped>
+#slideout #tab {
+  position: fixed;
+  top: 67px;
+  left: 250px;
+  width: 35px;
+  padding: 12px 0;
+  z-index: 999;
+  text-align: center;
+  background: #ccc;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+}
+
+#slideout #tab.hidden {
+  left: 0px;
+}
+
 /*
     From https://bootstrapious.com/p/bootstrap-sidebar
 */
