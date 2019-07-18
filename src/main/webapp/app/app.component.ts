@@ -4,6 +4,7 @@ import Ribbon from '@/core/ribbon/ribbon.vue';
 import JhiFooter from '@/core/jhi-footer/jhi-footer.vue';
 import JhiNavbar from '@/core/jhi-navbar/jhi-navbar.vue';
 import LoginForm from '@/account/login-form/login-form.vue';
+import Sidebar from './core/sidebar/sidebar.vue';
 
 @Component({
   components: {
@@ -11,7 +12,8 @@ import LoginForm from '@/account/login-form/login-form.vue';
     'jhi-navbar': JhiNavbar,
     'login-form': LoginForm,
 
-    'jhi-footer': JhiFooter
+    'jhi-footer': JhiFooter,
+    sidebar: Sidebar
   }
 })
 export default class App extends Vue {}
