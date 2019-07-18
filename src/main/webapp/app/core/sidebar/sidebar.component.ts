@@ -2,9 +2,13 @@ import { Component, Vue } from 'vue-property-decorator';
 
 @Component
 export default class Sidebar extends Vue {
-  public active = true;
+  public collapsed = true;
 
   public toggle(): void {
-    this.active = !this.active;
+    this.collapsed = !this.collapsed;
+  }
+
+  public hide(): void {
+    this.collapsed = true;
   }
 }

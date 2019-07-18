@@ -1,9 +1,9 @@
 <template>
   <div id="slideout">
-    <div id="tab" @click="toggle()" v-bind:class="{'hidden': active}">
+    <div id="tab" @click="toggle()" v-bind:class="{'hidden': collapsed}">
       <font-awesome-icon icon="bars" />
     </div>
-    <nav id="sidebar" v-bind:class="{'active': active}">
+    <nav id="sidebar" v-bind:class="{'active': collapsed}">
       <div class="sidebar-header">
         <h3>Bootstrap Sidebar</h3>
       </div>
@@ -11,7 +11,7 @@
       <ul class="list-unstyled components">
         <p>Dummy Heading</p>
         <li>
-          <b-nav-item to="/" exact>
+          <b-nav-item to="/" exact @click="hide()">
             <span>
               <font-awesome-icon icon="home" />
               <span v-text="$t('global.menu.home')">Home</span>
@@ -25,6 +25,13 @@
 <script lang="ts" src="./sidebar.component.ts">
 </script>
 <style scoped>
+/*
+    From https://bootstrapious.com/p/bootstrap-sidebar
+*/
+
+@import 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700';
+
+/* From CONACYT */
 #slideout #tab {
   position: fixed;
   top: 67px;
@@ -47,11 +54,8 @@
   left: 0px;
 }
 
-/*
-    From https://bootstrapious.com/p/bootstrap-sidebar
-*/
+/* End from CONACYT*/
 
-@import 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700';
 body {
   font-family: 'Poppins', sans-serif;
   background: #fafafa;
