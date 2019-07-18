@@ -1,24 +1,18 @@
 <template>
-  <div id="slideout">
-    <div id="tab" @click="toggle()" v-bind:class="{'hidden': collapsed}">
+  <div id="slideout" v-bind:class="{'active': active}">
+    <div id="tab" @click="toggle()">
       <font-awesome-icon icon="bars" />
     </div>
-    <nav id="sidebar" v-bind:class="{'active': collapsed}">
+    <nav id="sidebar">
       <div class="sidebar-header">
-        <h3>Bootstrap Sidebar</h3>
+        <h3 v-text="$t('global.title')"></h3>
       </div>
-
-      <ul class="list-unstyled components">
-        <p>Dummy Heading</p>
-        <li>
-          <b-nav-item to="/" exact @click="hide()">
-            <span>
-              <font-awesome-icon icon="home" />
-              <span v-text="$t('global.menu.home')">Home</span>
-            </span>
-          </b-nav-item>
-        </li>
-      </ul>
+      <b-nav-item to="/" exact @click="hide()">
+        <span>
+          <font-awesome-icon icon="home" />
+          <span v-text="$t('global.menu.home')">Home</span>
+        </span>
+      </b-nav-item>
     </nav>
   </div>
 </template>
@@ -26,35 +20,56 @@
 </script>
 <style scoped>
 /*
-    From https://bootstrapious.com/p/bootstrap-sidebar
+    Based on https://bootstrapious.com/p/bootstrap-sidebar
 */
 
 @import 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700';
 
-/* From CONACYT */
-#slideout #tab {
+#slideout {
   position: fixed;
-  top: 67px;
-  left: 250px;
-  width: 35px;
-  padding: 12px 0;
+  left: -250px;
   z-index: 999;
-  text-align: center;
-  background: #ccc;
-  -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
+  color: #fff;
+  transition: all 0.3s;
+  max-height: 100vh;
+  height: 100vh;
+  top: 0;
+}
+
+#tab {
+  position: fixed;
+  top: 60px;
+  width: 50px;
+  color: black;
+  left: 10px;
+  font-size: 2em;
   transition-duration: 0.3s;
-  -webkit-border-radius: 0 5px 5px 0;
-  -moz-border-radius: 0 5px 5px 0;
-  border-radius: 0 5px 5px 0;
 }
 
-#slideout #tab.hidden {
+#slideout.active #tab {
+  top: 70px;
+  transform: rotate(90deg);
+  left: 250px;
+  transition-duration: 0.3s;
+}
+
+#sidebar {
+  position: fixed;
+  width: 250px;
+  left: -250px;
+  z-index: 999;
+  background: #353d47;
+  color: #fff;
+  transition-duration: 0.3s;
+  overflow-y: scroll;
+  top: 0;
+  bottom: 0;
+}
+
+#slideout.active #sidebar {
   left: 0px;
+  transition-duration: 0.3s;
 }
-
-/* End from CONACYT*/
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -102,27 +117,6 @@ a:focus {
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
-/* Not used */
-.wrapper {
-  display: flex;
-  width: 100%;
-}
-
-#sidebar {
-  width: 250px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  z-index: 999;
-  background: #353d47;
-  color: #fff;
-  transition: all 0.3s;
-}
-
-#sidebar.active {
-  margin-left: -250px;
-}
 
 #sidebar .sidebar-header {
   padding: 20px;
@@ -196,46 +190,6 @@ a.article,
 a.article:hover {
   background: #6d7fcc !important;
   color: #fff !important;
-}
-
-/* ---------------------------------------------------
-    CONTENT STYLE
------------------------------------------------------ */
-
-#content {
-  width: calc(100% - 250px);
-  padding: 40px;
-  min-height: 100vh;
-  transition: all 0.3s;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-#content.active {
-  width: 100%;
-}
-
-/* ---------------------------------------------------
-    MEDIAQUERIES
------------------------------------------------------ */
-
-@media (max-width: 768px) {
-  #sidebar {
-    margin-left: -250px;
-  }
-  #sidebar.active {
-    margin-left: 0;
-  }
-  #content {
-    width: 100%;
-  }
-  #content.active {
-    width: calc(100% - 250px);
-  }
-  #sidebarCollapse span {
-    display: none;
-  }
 }
 </style>
 
