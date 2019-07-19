@@ -24,11 +24,9 @@
 
       <section style="margin-top: .5em;">
         <span class="alert alert-info">
-          <span class="node-icon staruml-icon icon-UMLAssociationEnd"></span>
-          UMLAssociationEnd
+          <span class="node-icon staruml-icon icon-UMLDependency"></span>
+          UMLDependency
         </span>
-        
-          <span style="margin-left: 10px" class="alert alert-info">«»</span>
         
       </section>
 
@@ -42,19 +40,13 @@
           <span class="label label-info"><a href='0fa3e26321c26558efa77ff144c36f21.html'><span class='node-icon staruml-icon icon-Project'></span>conacyt</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='9969dad9dece5c91173a6750c183ca06.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Modelo de Dominio</a></span>
+          <span class="label label-info"><a href='be85c70c5e48b132c07ca5f86a91fb0b.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Infraestructura</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='c99882d8a7eb633e1289e7958126366e.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>Proyecto</a></span>
+          <span class="label label-info"><a href='4a4d4abdf9b6720d259ae6fa5f190540.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>«negocio»Registro de Solicitud</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='1fdbf6d75a63079204c177936ef1b8a0.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Proyecto</a></span>
-        
-          <span>::</span>
-          <span class="label label-info"><a href='58fddf691403ec7854a03ea0538b6135.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Proyecto—Infraestructura)</a></span>
-        
-          <span>::</span>
-          <span class="label label-info"><a href='7079e7594634e2b345c0cbab588b2f95.html'><span class='node-icon staruml-icon icon-UMLAssociationEnd'></span>(AssociationEnd)</a></span>
+          <span class="label label-info"><a href='2f127c3405b8e57ec1fbf4aab066c128.html'><span class='node-icon staruml-icon icon-UMLDependency'></span>(Registro de Solicitud→Notificaciones)</a></span>
         
       </section>
 
@@ -81,6 +73,25 @@
 
       <!-- Directed Relationship -->
 
+      
+      <section class="element-list">
+        <table width="100%">
+          <tr>
+            <td width="50%">
+              <h3>Source</h3>
+              <ul class="nav nav-list">
+                <li><a href='4a4d4abdf9b6720d259ae6fa5f190540.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>«negocio»Registro de Solicitud</a></a></li>
+              </ul>
+            </td>
+            <td width="50%">
+              <h3>Target</h3>
+              <ul class="nav nav-list">
+                <li><a href='84d880a9c833065d59327d9403cb37cf.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>«transversal»Notificaciones</a></a></li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </section>
       
 
       <!-- Undirected Relationship -->
@@ -237,8 +248,17 @@
     
     
     <tr>
-        <td>reference</td>
-        <td><a href='62b8c5385bb9f182212cc466ee7a4b65.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Infraestructura</a></td>
+        <td>source</td>
+        <td><a href='4a4d4abdf9b6720d259ae6fa5f190540.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>«negocio»Registro de Solicitud</a></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>target</td>
+        <td><a href='84d880a9c833065d59327d9403cb37cf.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>«transversal»Notificaciones</a></td>
     </tr>
     
     
@@ -247,7 +267,7 @@
     
     <tr>
         <td>stereotype</td>
-        <td></td>
+        <td><span class='label label-info'>null</span></td>
     </tr>
     
     
@@ -264,91 +284,8 @@
     
     
     <tr>
-        <td>navigable</td>
-        <td><span class='label label-info'>true</span></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>aggregation</td>
-        <td>none</td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>multiplicity</td>
+        <td>mapping</td>
         <td></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>defaultValue</td>
-        <td></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>isReadOnly</td>
-        <td><span class='label label-info'>false</span></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>isOrdered</td>
-        <td><span class='label label-info'>false</span></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>isUnique</td>
-        <td><span class='label label-info'>false</span></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>isDerived</td>
-        <td><span class='label label-info'>false</span></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>isID</td>
-        <td><span class='label label-info'>false</span></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>qualifiers</td>
-        <td>
-            
-        </td>
     </tr>
     
     

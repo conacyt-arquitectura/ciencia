@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Tipo de Infraestructura</title>
+    <title></title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -18,15 +18,17 @@
 
       <!-- Name Title -->
 
-      <h1>Tipo de Infraestructura</h1>
+      <h1>(unnamed)</h1>
 
       <!-- Type and Stereotype -->
 
       <section style="margin-top: .5em;">
         <span class="alert alert-info">
-          <span class="node-icon staruml-icon icon-UMLClass"></span>
-          UMLClass
+          <span class="node-icon staruml-icon icon-UMLDependency"></span>
+          UMLDependency
         </span>
+        
+          <span style="margin-left: 10px" class="alert alert-info">«https:oidc»</span>
         
       </section>
 
@@ -40,13 +42,13 @@
           <span class="label label-info"><a href='0fa3e26321c26558efa77ff144c36f21.html'><span class='node-icon staruml-icon icon-Project'></span>conacyt</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='9969dad9dece5c91173a6750c183ca06.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Modelo de Dominio</a></span>
+          <span class="label label-info"><a href='be85c70c5e48b132c07ca5f86a91fb0b.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Infraestructura</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='c99882d8a7eb633e1289e7958126366e.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>Proyecto</a></span>
+          <span class="label label-info"><a href='408a036876baaee8ce70205f1a33b4ce.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>«security»Autenticación y Autorización</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='efceef2affa754994910cc4a2b5df5d3.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Tipo de Infraestructura</a></span>
+          <span class="label label-info"><a href='bd00a2e6c4fa6bd45a4b50cb8331dc65.html'><span class='node-icon staruml-icon icon-UMLDependency'></span>(Autenticación y Autorización→Bitácora de Operaciones)</a></span>
         
       </section>
 
@@ -74,32 +76,31 @@
       <!-- Directed Relationship -->
 
       
+      <section class="element-list">
+        <table width="100%">
+          <tr>
+            <td width="50%">
+              <h3>Source</h3>
+              <ul class="nav nav-list">
+                <li><a href='408a036876baaee8ce70205f1a33b4ce.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>«security»Autenticación y Autorización</a></a></li>
+              </ul>
+            </td>
+            <td width="50%">
+              <h3>Target</h3>
+              <ul class="nav nav-list">
+                <li><a href='826cfe1d0cdaab2e9633c54f1ae08f02.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>«transversal»Bitácora de Operaciones</a></a></li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </section>
+      
 
       <!-- Undirected Relationship -->
 
       
 
       <!-- Classifier -->
-
-      
-        
-        
-
-
-        
-        
-
-
-        
-        
-
-
-        
-        
-
-
-        
-        
 
       
 
@@ -235,7 +236,7 @@
     
     <tr>
         <td>name</td>
-        <td>Tipo de Infraestructura</td>
+        <td></td>
     </tr>
     
     
@@ -249,8 +250,26 @@
     
     
     <tr>
+        <td>source</td>
+        <td><a href='408a036876baaee8ce70205f1a33b4ce.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>«security»Autenticación y Autorización</a></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>target</td>
+        <td><a href='826cfe1d0cdaab2e9633c54f1ae08f02.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>«transversal»Bitácora de Operaciones</a></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
         <td>stereotype</td>
-        <td><span class='label label-info'>null</span></td>
+        <td>https:oidc</td>
     </tr>
     
     
@@ -266,46 +285,9 @@
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <tr>
-        <td>isAbstract</td>
-        <td><span class='label label-info'>false</span></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>isFinalSpecialization</td>
-        <td><span class='label label-info'>false</span></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>isLeaf</td>
-        <td><span class='label label-info'>false</span></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>isActive</td>
-        <td><span class='label label-info'>false</span></td>
+        <td>mapping</td>
+        <td></td>
     </tr>
     
     
@@ -321,32 +303,11 @@
       <!-- Constraints, Dependencies, Dependants -->
 
       
-        
-        
-
-
-        
-        
-
-
-        
-        
-
-      
 
       <!-- Relationships -->
 
       
       
-<section class="element-list">
-    <h3>Relationships</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='78d51c75fffb0c414a28ca3e0efa029f.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Infraestructura—Tipo de Infraestructura)</a></li>
-        
-    </ul>
-</section>
-
 
 
       <!-- Owned Elements -->

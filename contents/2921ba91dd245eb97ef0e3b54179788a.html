@@ -24,11 +24,11 @@
 
       <section style="margin-top: .5em;">
         <span class="alert alert-info">
-          <span class="node-icon staruml-icon icon-UMLAssociationEnd"></span>
-          UMLAssociationEnd
+          <span class="node-icon staruml-icon icon-UMLDependency"></span>
+          UMLDependency
         </span>
         
-          <span style="margin-left: 10px" class="alert alert-info">«»</span>
+          <span style="margin-left: 10px" class="alert alert-info">«jdbc:oracle»</span>
         
       </section>
 
@@ -42,19 +42,13 @@
           <span class="label label-info"><a href='0fa3e26321c26558efa77ff144c36f21.html'><span class='node-icon staruml-icon icon-Project'></span>conacyt</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='9969dad9dece5c91173a6750c183ca06.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Modelo de Dominio</a></span>
+          <span class="label label-info"><a href='be85c70c5e48b132c07ca5f86a91fb0b.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Infraestructura</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='c99882d8a7eb633e1289e7958126366e.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>Proyecto</a></span>
+          <span class="label label-info"><a href='5fc8db5ad7d33d17b226705eb0627bd6.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>validaciones</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='62b8c5385bb9f182212cc466ee7a4b65.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Infraestructura</a></span>
-        
-          <span>::</span>
-          <span class="label label-info"><a href='78d51c75fffb0c414a28ca3e0efa029f.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Infraestructura—Tipo de Infraestructura)</a></span>
-        
-          <span>::</span>
-          <span class="label label-info"><a href='4a8430cc262660914dc5f2dfbca6333e.html'><span class='node-icon staruml-icon icon-UMLAssociationEnd'></span>(AssociationEnd)</a></span>
+          <span class="label label-info"><a href='2921ba91dd245eb97ef0e3b54179788a.html'><span class='node-icon staruml-icon icon-UMLDependency'></span>(validaciones→SIICYT)</a></span>
         
       </section>
 
@@ -81,6 +75,25 @@
 
       <!-- Directed Relationship -->
 
+      
+      <section class="element-list">
+        <table width="100%">
+          <tr>
+            <td width="50%">
+              <h3>Source</h3>
+              <ul class="nav nav-list">
+                <li><a href='5fc8db5ad7d33d17b226705eb0627bd6.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>validaciones</a></a></li>
+              </ul>
+            </td>
+            <td width="50%">
+              <h3>Target</h3>
+              <ul class="nav nav-list">
+                <li><a href='ce1f43c658bc901d4dfc5e2e7b1c5287.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>«database»SIICYT</a></a></li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </section>
       
 
       <!-- Undirected Relationship -->
@@ -237,8 +250,17 @@
     
     
     <tr>
-        <td>reference</td>
-        <td><a href='efceef2affa754994910cc4a2b5df5d3.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Tipo de Infraestructura</a></td>
+        <td>source</td>
+        <td><a href='5fc8db5ad7d33d17b226705eb0627bd6.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>validaciones</a></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>target</td>
+        <td><a href='ce1f43c658bc901d4dfc5e2e7b1c5287.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>«database»SIICYT</a></td>
     </tr>
     
     
@@ -247,7 +269,7 @@
     
     <tr>
         <td>stereotype</td>
-        <td></td>
+        <td>jdbc:oracle</td>
     </tr>
     
     
@@ -264,91 +286,8 @@
     
     
     <tr>
-        <td>navigable</td>
-        <td><span class='label label-info'>true</span></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>aggregation</td>
-        <td>none</td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>multiplicity</td>
-        <td>1</td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>defaultValue</td>
+        <td>mapping</td>
         <td></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>isReadOnly</td>
-        <td><span class='label label-info'>false</span></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>isOrdered</td>
-        <td><span class='label label-info'>false</span></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>isUnique</td>
-        <td><span class='label label-info'>false</span></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>isDerived</td>
-        <td><span class='label label-info'>false</span></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>isID</td>
-        <td><span class='label label-info'>false</span></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>qualifiers</td>
-        <td>
-            
-        </td>
     </tr>
     
     
