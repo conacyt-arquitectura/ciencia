@@ -550,7 +550,7 @@ badge {
 /* non-bootstrap css
 ---------------------------------------------------------*/
 
-[class^="icon-"]{
+[class^="icon-"], [class*=" icon-"] {
     background: none;
 }
 body{
