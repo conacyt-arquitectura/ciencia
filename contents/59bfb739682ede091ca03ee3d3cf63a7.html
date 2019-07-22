@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Ciencia de Frontera</title>
+    <title>/catalogos</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -18,17 +18,15 @@
 
       <!-- Name Title -->
 
-      <h1>Ciencia de Frontera</h1>
+      <h1>/catalogos</h1>
 
       <!-- Type and Stereotype -->
 
       <section style="margin-top: .5em;">
         <span class="alert alert-info">
-          <span class="node-icon staruml-icon icon-UMLNode"></span>
-          UMLNode
+          <span class="node-icon staruml-icon icon-UMLDependency"></span>
+          UMLDependency
         </span>
-        
-          <span style="margin-left: 10px" class="alert alert-info">«docker»</span>
         
       </section>
 
@@ -45,7 +43,10 @@
           <span class="label label-info"><a href='be85c70c5e48b132c07ca5f86a91fb0b.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Infraestructura</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='b874a4d4203caedd65e87bcc0cabb86b.html'><span class='node-icon staruml-icon icon-UMLNode'></span>«docker»Ciencia de Frontera</a></span>
+          <span class="label label-info"><a href='9db1a6d6368e43f6ceb101aca9bbe892.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>«vue.js:static»Ciencia de Frontera</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='59bfb739682ede091ca03ee3d3cf63a7.html'><span class='node-icon staruml-icon icon-UMLDependency'></span>/catalogos (Nginx→Componentes de Soporte)</a></span>
         
       </section>
 
@@ -73,32 +74,31 @@
       <!-- Directed Relationship -->
 
       
+      <section class="element-list">
+        <table width="100%">
+          <tr>
+            <td width="50%">
+              <h3>Source</h3>
+              <ul class="nav nav-list">
+                <li><a href='8f77b01692a68a6e5f8771591dfd15ab.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>«proxy»Nginx</a></a></li>
+              </ul>
+            </td>
+            <td width="50%">
+              <h3>Target</h3>
+              <ul class="nav nav-list">
+                <li><a href='225ec7f0743c23d675183130405ac963.html'><span class='node-icon staruml-icon icon-UMLNode'></span>«docker»Componentes de Soporte</a></a></li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </section>
+      
 
       <!-- Undirected Relationship -->
 
       
 
       <!-- Classifier -->
-
-      
-        
-        
-
-
-        
-        
-
-
-        
-        
-
-
-        
-        
-
-
-        
-        
 
       
 
@@ -111,10 +111,6 @@
       
 
       <!-- Node -->
-
-      
-        
-        
 
       
 
@@ -238,7 +234,7 @@
     
     <tr>
         <td>name</td>
-        <td>Ciencia de Frontera</td>
+        <td>/catalogos</td>
     </tr>
     
     
@@ -252,8 +248,26 @@
     
     
     <tr>
+        <td>source</td>
+        <td><a href='8f77b01692a68a6e5f8771591dfd15ab.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>«proxy»Nginx</a></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>target</td>
+        <td><a href='225ec7f0743c23d675183130405ac963.html'><span class='node-icon staruml-icon icon-UMLNode'></span>«docker»Componentes de Soporte</a></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
         <td>stereotype</td>
-        <td>docker</td>
+        <td><span class='label label-info'>null</span></td>
     </tr>
     
     
@@ -269,37 +283,9 @@
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <tr>
-        <td>isAbstract</td>
-        <td><span class='label label-info'>false</span></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>isFinalSpecialization</td>
-        <td><span class='label label-info'>false</span></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>isLeaf</td>
-        <td><span class='label label-info'>false</span></td>
+        <td>mapping</td>
+        <td></td>
     </tr>
     
     
@@ -315,67 +301,17 @@
       <!-- Constraints, Dependencies, Dependants -->
 
       
-        
-        
-
-
-        
-        
-<section class="element-list">
-    <h3>Dependencies</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='f44ce323a61f799df2b7d88cdbfaa0d8.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>«schema»Ciencia de Frontera</a></li>
-        
-    </ul>
-</section>
-
-
-
-        
-        
-<section class="element-list">
-    <h3>Dependants</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='8f77b01692a68a6e5f8771591dfd15ab.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>«proxy»Nginx</a></li>
-        
-    </ul>
-</section>
-
-
-      
 
       <!-- Relationships -->
 
       
       
-<section class="element-list">
-    <h3>Relationships</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='a70fb05527cf00792210e78674b01a5e.html'><span class='node-icon staruml-icon icon-UMLDependency'></span>/ciencia (Nginx→Ciencia de Frontera)</a></li>
-        
-        <li><a href='75d2903abda6439c8474d8d3944f139e.html'><span class='node-icon staruml-icon icon-UMLDependency'></span>jdbc:PostgreSQL (Ciencia de Frontera→Ciencia de Frontera)</a></li>
-        
-    </ul>
-</section>
-
 
 
       <!-- Owned Elements -->
 
       
       
-<section class="element-list">
-    <h3>Owned Elements</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='75d2903abda6439c8474d8d3944f139e.html'><span class='node-icon staruml-icon icon-UMLDependency'></span>jdbc:PostgreSQL (Ciencia de Frontera→Ciencia de Frontera)</a></li>
-        
-    </ul>
-</section>
-
 
 
     </div>
