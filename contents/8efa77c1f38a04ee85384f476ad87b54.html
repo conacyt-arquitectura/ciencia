@@ -24,11 +24,9 @@
 
       <section style="margin-top: .5em;">
         <span class="alert alert-info">
-          <span class="node-icon staruml-icon icon-UMLAssociationEnd"></span>
-          UMLAssociationEnd
+          <span class="node-icon staruml-icon icon-UMLControlFlow"></span>
+          UMLControlFlow
         </span>
-        
-          <span style="margin-left: 10px" class="alert alert-info">«»</span>
         
       </section>
 
@@ -42,19 +40,13 @@
           <span class="label label-info"><a href='0fa3e26321c26558efa77ff144c36f21.html'><span class='node-icon staruml-icon icon-Project'></span>conacyt</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='9969dad9dece5c91173a6750c183ca06.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Modelo de Dominio</a></span>
+          <span class="label label-info"><a href='650f2be987aea5d14f3c73fa72f20af0.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Proceso</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='c99882d8a7eb633e1289e7958126366e.html'><span class='node-icon staruml-icon icon-UMLPackage'></span>Proyecto</a></span>
+          <span class="label label-info"><a href='60b799818261f839b0d78b496df1aa0f.html'><span class='node-icon staruml-icon icon-UMLActivity'></span>Registrar Solicitud</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='425bef327d6b1f9594bf315bb1c9a6f4.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Solicitud</a></span>
-        
-          <span>::</span>
-          <span class="label label-info"><a href='e8cb5e0222ebf88a9a5e4797eafb671d.html'><span class='node-icon staruml-icon icon-UMLAssociation'></span>está en (Solicitud—Estado de la Solicitud)</a></span>
-        
-          <span>::</span>
-          <span class="label label-info"><a href='e84a410a766c53d52de2fa6eab48b168.html'><span class='node-icon staruml-icon icon-UMLAssociationEnd'></span>(AssociationEnd)</a></span>
+          <span class="label label-info"><a href='8efa77c1f38a04ee85384f476ad87b54.html'><span class='node-icon staruml-icon icon-UMLControlFlow'></span>(Proponer Evaluadores→ForkNode1)</a></span>
         
       </section>
 
@@ -81,6 +73,25 @@
 
       <!-- Directed Relationship -->
 
+      
+      <section class="element-list">
+        <table width="100%">
+          <tr>
+            <td width="50%">
+              <h3>Source</h3>
+              <ul class="nav nav-list">
+                <li><a href='5a3a781b0b112a6f8247bee7ec0a7727.html'><span class='node-icon staruml-icon icon-UMLAction'></span>«pantalla»Proponer Evaluadores</a></a></li>
+              </ul>
+            </td>
+            <td width="50%">
+              <h3>Target</h3>
+              <ul class="nav nav-list">
+                <li><a href='f3ec16e776448739ab193465078697fe.html'><span class='node-icon staruml-icon icon-UMLForkNode'></span>ForkNode1</a></a></li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </section>
       
 
       <!-- Undirected Relationship -->
@@ -237,8 +248,17 @@
     
     
     <tr>
-        <td>reference</td>
-        <td><a href='d94191b609b5edf11a3fdf182f1c1e46.html'><span class='node-icon staruml-icon icon-UMLClass'></span>«Catálogo»Estado de la Solicitud</a></td>
+        <td>source</td>
+        <td><a href='5a3a781b0b112a6f8247bee7ec0a7727.html'><span class='node-icon staruml-icon icon-UMLAction'></span>«pantalla»Proponer Evaluadores</a></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>target</td>
+        <td><a href='f3ec16e776448739ab193465078697fe.html'><span class='node-icon staruml-icon icon-UMLForkNode'></span>ForkNode1</a></td>
     </tr>
     
     
@@ -247,7 +267,7 @@
     
     <tr>
         <td>stereotype</td>
-        <td></td>
+        <td><span class='label label-info'>null</span></td>
     </tr>
     
     
@@ -264,34 +284,7 @@
     
     
     <tr>
-        <td>navigable</td>
-        <td><span class='label label-info'>true</span></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>aggregation</td>
-        <td>none</td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>multiplicity</td>
-        <td>1</td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>defaultValue</td>
+        <td>guard</td>
         <td></td>
     </tr>
     
@@ -300,55 +293,8 @@
     
     
     <tr>
-        <td>isReadOnly</td>
-        <td><span class='label label-info'>false</span></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>isOrdered</td>
-        <td><span class='label label-info'>false</span></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>isUnique</td>
-        <td><span class='label label-info'>false</span></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>isDerived</td>
-        <td><span class='label label-info'>false</span></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>isID</td>
-        <td><span class='label label-info'>false</span></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>qualifiers</td>
-        <td>
-            
-        </td>
+        <td>weight</td>
+        <td></td>
     </tr>
     
     
